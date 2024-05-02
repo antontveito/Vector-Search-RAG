@@ -1,0 +1,1 @@
+Boundary layer control, achived using suction or blowing methods, can significantly reduce the aerodynamic drag on an aircraft's wing surface. The yaw angle of an aircraft, indicative of its side-to-side motion, is crucial for stability
