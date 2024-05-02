@@ -5,12 +5,12 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-CONNECTION_STRING = os.getenv('CONNECTION_STRING')
+MONGO_URI = os.getenv('MONGO_URI')
 API_KEY =  os.getenv('OPEN_AI_API_KEY')
 
 openai.api_key = API_KEY
 
-client = pymongo.MongoClient(CONNECTION_STRING)
+client = pymongo.MongoClient(MONGO_URI)
 db = client.sample_mflix
 collection = db.embedded_movies
 
