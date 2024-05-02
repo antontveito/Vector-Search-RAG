@@ -5,11 +5,11 @@ import requests
 from dotenv import load_dotenv
 load_dotenv()
 
-CONNECTION_STRING = os.getenv('CONNECTION_STRING')
+MONGO_URI = os.getenv('MONGO_URI')
 HF_TOKEN = os.getenv('HF_TOKEN')
 EMBEDDING_URL = 'https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2'
 
-client = pymongo.MongoClient(CONNECTION_STRING)
+client = pymongo.MongoClient(MONGO_URI)
 db = client.sample_mflix
 collection = db.movies
 
